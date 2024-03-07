@@ -17,15 +17,15 @@ body {
     transition: transform .4s;
     box-sizing: border-box;
     z-index: 0;
-    cursor: pointer;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
     display: flex;
+    text-decoration: none;
+    color: white;
 }
 
 .container div {
-
     margin: 650px auto 0 auto;
     font-size: 80px;
     text-shadow: 0 0 10px black;

@@ -1,12 +1,23 @@
 {
     "achtergrondPlaatje": "",
-    "kleur1": "green",
+    "kleur1": "blue",
     "vragen": [
         {
             "vraag": "How many pickles?",
             "plaatje": "",
             "goedAntwoord": "2",
             "fouteAntwoorden": ["6", "9", "7", "912", "3"]
+        },
+        {
+            "vraag": "Wie is de goat?",
+            "plaatje": "",
+            "goedAntwoord": "Michal",
+            "fouteAntwoorden": ["Mika", "Mo", "Erim"]
+        },
+        {
+            "vraag": "Welke land moet weg?",
+            "plaatje": "",
+            "goedAntwoord": "Frankrijk"
         }
     ]
 }

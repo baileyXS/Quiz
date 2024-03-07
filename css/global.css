@@ -3,6 +3,10 @@
     src: url("../assets/fonts/PhosphateInline.ttf");
 }
 
+@font-face {
+    font-family: Main;
+    src: url(../assets/fonts/main.ttf);
+}
 
 body {
     margin: 0;

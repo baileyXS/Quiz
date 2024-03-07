@@ -8,6 +8,15 @@
     src: url(../assets/fonts/main.ttf);
 }
 
+@font-face {
+    font-family: vraagmain;
+    src: url(../assets/fonts/Trebuchetbold.ttf);
+}
+
+@font-face {
+    font-family: CopperplateBold;
+    src: url(../assets/fonts/CopperplateBold.ttf);
+}
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

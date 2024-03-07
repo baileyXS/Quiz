@@ -1,0 +1,40 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: black;
+
+}
+
+.container-parent {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    flex: 1;
+    transition: transform .4s;
+    box-sizing: border-box;
+    z-index: 0;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+}
+
+.container div {
+
+    margin: 400px auto 0 auto;
+    font-size: 80px;
+    text-shadow: 0 0 10px black;
+font-family: Phosphate;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    z-index: 1;
+}

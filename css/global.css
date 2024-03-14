@@ -22,4 +22,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #111;
     color: white;
+    user-select: none;
+    height: 100vh;
 }

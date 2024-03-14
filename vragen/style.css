@@ -37,7 +37,7 @@
     border-radius: 3vh;
     font-size: 30px;
     text-align: center;
-    background: rgb(255, 255, 255);
+    background: var(--kleur1);
     z-index: 2;
     color: black;
     flex: 1 1 auto;
@@ -69,11 +69,17 @@ html {
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-image: url('../assets/img/waterBackground.jpg');
+}
+
+#background {
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-image: var(--background);
     display: flex;
     flex-direction: column;
 }

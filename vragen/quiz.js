@@ -1,3 +1,5 @@
+let questionIndex = -1;
+
 function returnToMenu() {
     window.location.href = "../";
 }
@@ -23,14 +25,24 @@ let quiz;
 let domLoaded = false;
 let quizInitialized = false;
 
+function nextQuestion() {
+    questionIndex++;
+    const question = quiz.vragen[questionIndex];
+
+    $('#maintext').text(`VRAAG ${questionIndex + 1}`);
+    $('#vraagtext').text(question.vraag);
+}
+
 function initQuiz() {
     if (quizInitialized || !domLoaded || !quiz) return;
     quizInitialized = true;
 
     shuffleArray(quiz.vragen);
 
-    console.log(quiz.vragen);
-    // TODO: Initialize quiz
+    document.documentElement.style.setProperty('--background', `url('${quizPath + quiz.achtergrondPlaatje}')`);
+    document.documentElement.style.setProperty('--kleur1', quiz.kleur1);
+
+    nextQuestion();
 }
 
 document.addEventListener("DOMContentLoaded", () => {

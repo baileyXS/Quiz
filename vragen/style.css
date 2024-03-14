@@ -77,3 +77,38 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+#overlayAntwoord {
+ 
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#antwoordOverlayMidden {
+    background-color: rgb(119, 62, 62);
+   
+    border-radius: 2.3vh;
+    top: 10vh;
+    bottom: 10vh;
+    left: 10vh;
+    right: 10vh;
+    position: fixed;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+
+}
+
+#antwoordOverlaytekst {
+    font-size: 62px;
+    transform: translateY(45%);
+    margin: 0 auto;
+    font-style: bold;
+    font-family: CopperplateBold;
+    text-align: center;
+} 

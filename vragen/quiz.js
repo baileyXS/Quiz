@@ -31,6 +31,7 @@ function nextQuestion() {
 
     $('#maintext').text(`VRAAG ${questionIndex + 1}`);
     $('#vraagtext').text(question.vraag);
+    $('#img-vraag').attr('src', question.plaatje);
 }
 
 function initQuiz() {

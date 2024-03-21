@@ -44,7 +44,8 @@ function nextQuestion() {
     existingButtons.length = 0;
 
     if (isOpen) {
-
+        const inputField = $('#inputField');
+        inputField.val('');
     }
     else {
         const prefab = $('#buttonPrefab');

@@ -1,0 +1,21 @@
+.maintext {
+    animation: laadani 1s ease-in-out forwards;
+    margin: 0px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    top: 20px;
+    font-size: 160px;
+    text-shadow: 0 0 15px black;
+    letter-spacing: 5px;
+    font-family: Main;
+}
+
+#resultatenBox {
+    width: 700px;
+    height: 500px;
+    border: 2px rgb(255, 255, 255);
+    background-color: white;
+    margin: 0 auto;
+}

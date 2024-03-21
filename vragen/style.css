@@ -98,7 +98,7 @@
 #inputField {
     color: white;
     border: none;
-    background-color: rgb(74, 74, 74);
+    background: var(--kleur1);
     text-align: center;
     width: 550px;
     height: 40px;

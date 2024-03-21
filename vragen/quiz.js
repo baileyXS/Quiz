@@ -19,11 +19,12 @@ function shuffleArray(array) {
     }
 }
 
-const quizPath = `../assets/quiz/${quizType}/`
+const quizPath = `../assets/quiz/${quizType}/`;
 
 let quiz;
 let domLoaded = false;
 let quizInitialized = false;
+let existingButtons = [];
 
 function nextQuestion() {
     questionIndex++;
@@ -32,6 +33,53 @@ function nextQuestion() {
     $('#maintext').text(`VRAAG ${questionIndex + 1}`);
     $('#vraagtext').text(question.vraag);
     $('#img-vraag').attr('src', question.plaatje);
+
+    const isOpen = !question.fouteAntwoorden || question.fouteAntwoorden.length == 0;
+    $('#antwoordlijsten-container').css('display', isOpen ? 'none' : 'flex');
+    $('#inputField').css('display', isOpen ? 'flex' : 'none');
+
+    existingButtons.forEach(element => {
+        element.remove();
+    });
+    existingButtons.length = 0;
+
+    if (isOpen) {
+
+    }
+    else {
+        const prefab = $('#buttonPrefab');
+
+        let antwoorden = [];
+        question.fouteAntwoorden.forEach(x => {
+            antwoorden.push({
+                answer: x,
+                good: false
+            });
+        });
+        antwoorden.push({
+            answer: question.goedAntwoord,
+            good: true
+        });
+
+        shuffleArray(antwoorden);
+
+        let right = false;
+        antwoorden.forEach(x => {
+            const parent = $(right ? '#antwoorden-rechts' : '#antwoorden-links');
+            right = !right;
+            const button = prefab.clone();
+            existingButtons.push(button);
+            button.attr('id', null);
+            button.children('.buttonText')[0].innerText = x.answer;
+            button.on('click', () => displayResult(x.good));
+
+            parent.append(button);
+        });
+    }
+}
+
+function displayResult(isGood) {
+
 }
 
 function initQuiz() {

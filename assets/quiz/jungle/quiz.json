@@ -4,7 +4,8 @@
     "vragen": [
         {
             "vraag": "How many pickles?",
-            "plaatje": "",
+            "plaatje": "../assets/img/placeholder.webp",
+            
             "goedAntwoord": "2",
             "fouteAntwoorden": ["6", "9", "7", "912", "3"]
         }

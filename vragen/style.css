@@ -1,11 +1,11 @@
 @keyframes laadani {
     0% {
-        transform: translateY(100%);
+
         opacity: 0;
     }
 
     100% {
-        transform: translateY(0);
+
         opacity: 1;
     }
 }
@@ -15,8 +15,25 @@
 #vraagtext,
 #buttonPrefab,
 .buttonanswer,
-.antwoorden-lijst {
-    animation: laadani 0.3s ease-in-out forwards;
+.antwoorden-lijst,
+.home {
+    animation: laadani 1s ease-in-out forwards;
+}
+
+.home {
+    position: fixed;
+    /* or absolute/fixed depending on your layout */
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background-image: url(../assets/img/home.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.4s;
+}
+
+.home:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .5));
 }
 
 #maintext {
@@ -29,6 +46,7 @@
 }
 
 #img-vraag {
+    margin-bottom: 25%;
     margin: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -71,11 +89,28 @@
 }
 
 #antwoordlijsten-container {
-    display: flex;
+    display: none;
     flex-grow: 1;
     margin: 3vh 15vh;
     flex-direction: row;
 }
+
+#inputField {
+    color: white;
+    border: none;
+    background-color: rgb(74, 74, 74);
+    text-align: center;
+    width: 550px;
+    height: 40px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 2vh;
+    margin: 4% auto;
+    display: none;
+    outline: none;
+}
+
+
 
 .antwoorden-lijst {
     display: flex;

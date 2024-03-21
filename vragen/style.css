@@ -1,4 +1,26 @@
+@keyframes laadani {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#maintext,
+#img-vraag,
+#vraagtext,
+#buttonPrefab,
+.buttonanswer,
+.antwoorden-lijst {
+    animation: laadani 0.3s ease-in-out forwards;
+}
+
 #maintext {
+
     font-family: Phosphate;
     font-size: 60px;
     text-shadow: 0 0 10px black;
@@ -69,6 +91,7 @@ html {
 }
 
 body {
+
     height: 100%;
     width: 100%;
 }
@@ -85,7 +108,6 @@ body {
 }
 
 #overlayAntwoord {
- 
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
     position: fixed;
@@ -98,7 +120,7 @@ body {
 
 #antwoordOverlayMidden {
     background-color: rgb(119, 62, 62);
-   
+
     border-radius: 2.3vh;
     top: 10vh;
     bottom: 10vh;
@@ -117,4 +139,4 @@ body {
     font-style: bold;
     font-family: CopperplateBold;
     text-align: center;
-} 
+}

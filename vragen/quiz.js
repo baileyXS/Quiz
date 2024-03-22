@@ -26,6 +26,27 @@ let domLoaded = false;
 let quizInitialized = false;
 let existingButtons = [];
 
+function onInputKeyPress(inputField, event) {
+    if (event.key !== "Enter") return;
+
+    checkResult(inputField.value);
+}
+
+function checkResult(antwoord) {
+    existingButtons.forEach(element => {
+        element.remove();   
+    });
+    existingButtons.length = 0;
+
+    $('#inputField').val('');
+
+    const question = quiz.vragen[questionIndex];
+    
+    if (antwoord === question.antwoord) {
+        
+    }
+}
+
 function nextQuestion() {
     questionIndex++;
     const question = quiz.vragen[questionIndex];
@@ -38,11 +59,6 @@ function nextQuestion() {
     $('#antwoordlijsten-container').css('display', isOpen ? 'none' : 'flex');
     $('#inputField').css('display', isOpen ? 'flex' : 'none');
 
-    existingButtons.forEach(element => {
-        element.remove();   
-    });
-    existingButtons.length = 0;
-
     if (isOpen) {
         const inputField = $('#inputField');
         inputField.val('');
@@ -52,15 +68,9 @@ function nextQuestion() {
 
         let antwoorden = [];
         question.fouteAntwoorden.forEach(x => {
-            antwoorden.push({
-                answer: x,
-                good: false
-            });
+            antwoorden.push(x);
         });
-        antwoorden.push({
-            answer: question.goedAntwoord,
-            good: true
-        });
+        antwoorden.push(question.goedAntwoord);
 
         shuffleArray(antwoorden);
 
@@ -71,16 +81,12 @@ function nextQuestion() {
             const button = prefab.clone();
             existingButtons.push(button);
             button.attr('id', null);
-            button.children('.buttonText')[0].innerText = x.answer;
-            button.on('click', () => displayResult(x.good));
+            button.children('.buttonText')[0].innerText = x;
+            button.on('click', () => checkResult(x));
 
             parent.append(button);
         });
     }
-}
-
-function displayResult(isGood) {
-
 }
 
 function initQuiz() {

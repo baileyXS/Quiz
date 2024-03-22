@@ -39,7 +39,7 @@ function nextQuestion() {
     $('#inputField').css('display', isOpen ? 'flex' : 'none');
 
     existingButtons.forEach(element => {
-        element.remove();
+        element.remove();   
     });
     existingButtons.length = 0;
 

@@ -3,10 +3,90 @@
     "kleur1": "red",
     "vragen": [
         {
-            "vraag": "How many pickles?",
-            "plaatje": "",
-            "goedAntwoord": "2",
-            "fouteAntwoorden": ["6", "9", "7", "912", "3"]
+            "vraag": "Wat is de gemiddelde diepte van de oceaan? (in meters)",
+            "plaatje": "vraag1.jpg",
+            "goedAntwoord": "3.790 ",
+            "fouteAntwoorden": ["5.240", "2.810", "4.120"]
+        },
+        {
+            "vraag": "Hoeveel procent van het aardoppervlak wordt bedekt door oceanen?",
+            "plaatje": "vraag2.jpg",
+            "goedAntwoord": "71% ",
+            "fouteAntwoorden": ["68%", "76%", "82%"]
+        },        
+        {
+            "vraag": "Wat is de meest voorkomende levensvorm in de diepzee?",
+            "plaatje": "vraag3.jpg",
+            "goedAntwoord": "bacteriën  ",
+            "fouteAntwoorden": ["neteldieren", "diepzee vissen", "kreeftachtigen", "stekelhuidigen", "zee zooggdieren"]
+        },
+        {
+            "vraag": "Wat is de belangrijkste bron van voedsel voor veel zeedieren?",
+            "plaatje": "vraag4.jpg",
+            "goedAntwoord": "plankton ",
+            "fouteAntwoorden": ["andere vissen", "schelpen", "wormen"]
+        },
+        {
+            "vraag": "Hoeveel procent van alle levende dingen bevinden zich onder water?",
+            "plaatje": "vraag5.jpg",
+            "goedAntwoord": "80% ",
+            "fouteAntwoorden": ["45%", "65%", "90%", "50", "75%"]
+        },
+        {
+            "vraag": "Wat is het grootste levende dier in de oceaan?",
+            "plaatje": "vraag6.jpg",
+            "goedAntwoord": "Blauwe vinvis ",
+            "fouteAntwoorden": ["maan vis", "walvis haai", "witte haai", "reuzenmanta", "reazenhaai"]
+        },
+        {
+            "vraag": "Hoe worden koraalriffen gevormd?",
+            "plaatje": "vraag7.jpg",
+            "goedAntwoord": "opbouw van skeletten van zeedieren ",
+            "fouteAntwoorden": ["het afzetten van sedimenten door de wind", " vulkanische activiteit onder de oceaan", "groei van giga zeesponzen op de zeebodem"]
+        },
+        {
+            "vraag": "Wat is de naam van het diepste deel van de oceaan?",
+            "plaatje": "vraag8.jpg",
+            "goedAntwoord": "Marianentrog ",
+            "fouteAntwoorden": ["pelagische", "bathyale", "abyssale"]
+        },
+        {
+            "vraag": "Hoe snel kan de orka zwemmen? (km/h)",
+            "plaatje": "vraag9.jpg",
+            "goedAntwoord": "56 ",
+            "fouteAntwoorden": ["114", "68", "32", "47", "74"]
+        },
+        {
+            "vraag": "Hoeveel procent van de zuurstof in de atmosfeer wordt geproduceerd door oceanen?",
+            "plaatje": "vraag10.jpg",
+            "goedAntwoord": "50%",
+            "fouteAntwoorden": ["45%", "60%", "40%", "80%", "75%"]
+        },
+        {
+            "vraag": "Welk microscopisch organisme vormt de basis van veel mariene voedselketens?",
+            "plaatje": "vraag11.jpg",
+            "goedAntwoord": "Plankton"
+        },
+        {
+            "vraag": "Wat is de naam van de diepe, donkere zone in de oceaan waar weinig tot geen zonlicht doordringt?",
+            "plaatje": "vraag12.jpg",
+            "goedAntwoord": " Bathypelagische zone"
+        },
+        {
+            "vraag": "Welke geologische formatie bestaat uit zeezout en sedimenten en wordt gevonden langs kustlijnen?",
+            "plaatje": "vraag13.jpg",
+            "goedAntwoord": "Zandbanken"
+        },
+        {
+            "vraag": "Wat is de naam van het proces waarbij zee-organismen, zoals koralen en weekdieren, koolstofdioxide uit het water opnemen en het omzetten in kalksteen? ",
+            "plaatje": "vraag14.jpg",
+            "goedAntwoord": "Biomineralisatie"
+        },
+        {
+            "vraag": "Wat is de wetenschappelijke term voor de beweging van water veroorzaakt door de draaiing van de aarde en verschillen in temperatuur en dichtheid?",
+            "plaatje": "vraag15.jpg",
+            "goedAntwoord": "Oceaancirculatie"
         }
+
     ]
 }

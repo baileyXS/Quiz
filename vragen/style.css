@@ -1,11 +1,11 @@
 @keyframes laadani {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 #maintext,
@@ -15,159 +15,162 @@
 .buttonanswer,
 .antwoorden-lijst,
 .home {
-    animation: laadani 1s ease-in-out forwards;
+  animation: laadani 1s ease-in-out forwards;
 }
 
-
 #maintext {
-    font-family: Phosphate;
-    font-size: 60px;
-    
-    text-shadow: 0 0 10px black;
-    margin-top: 5vh;
-    text-align: center;
+  font-family: Phosphate;
+  font-size: 60px;
+
+  text-shadow: 0 0 10px black;
+  margin-top: 5vh;
+  text-align: center;
 }
 
 #img-vraag {
-    margin-bottom: 25%;
-    margin: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: fixed;
-    top: 15vh;
-    border-radius: 64px;
-    object-fit: cover;
-    width: 80vh;
-    height: 30vh;
+  margin-bottom: 25%;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  top: 15vh;
+  border-radius: 64px;
+  object-fit: cover;
+  width: 80vh;
+  height: 30vh;
 }
 
 #vraagtext {
-    font-family: vraagmain;
-    font-size: 50px;
-    text-shadow: 0 0 10px black;
-    text-align: center;
-    margin-top: 37vh;
-    margin-bottom: 2vh;
+  font-family: vraagmain;
+  font-size: 50px;
+  text-shadow: 0 0 10px black;
+  text-align: center;
+  margin-top: 37vh;
+  margin-bottom: 2vh;
 }
 
 #buttonPrefab {
-    display: none;
+  display: none;
 }
 
 .buttonanswer {
-    margin: 1.5vh;
-    font-family: CopperplateBold;
-    border-radius: 3vh;
-    cursor: pointer;
-    font-size: 30px;
-    text-align: center;
-    background: #0000006d;
-    z-index: 2;
-    color: black;
-    flex: 1 1 auto;
-    display: flex;
-    color: white;
+  margin: 1.5vh;
+  font-family: CopperplateBold;
+  border-radius: 3vh;
+  cursor: pointer;
+  font-size: 30px;
+  text-align: center;
+  background: #0000006d;
+  z-index: 2;
+  color: black;
+  flex: 1 1 auto;
+  display: flex;
+  color: white;
 }
 
 .buttonanswer div {
-    margin: auto;
+  margin: auto;
 }
 
 #antwoordlijsten-container {
-    display: none;
-    flex-grow: 1;
-    margin: 3vh 15vh;
-    flex-direction: row;
+  display: none;
+  flex-grow: 1;
+  margin: 3vh 15vh;
+  flex-direction: row;
 }
 
 #inputField {
-    color: white;
-    border: none;
-    background: #0000006d;
-    text-align: center;
-    width: 550px;
-    height: 40px;
-    padding: 10px;
-    font-size: 30px;
-    border-radius: 2vh;
-    margin: 4% auto;
-    display: none;
-    outline: none;
+  color: white;
+  border: none;
+  background: #0000006d;
+  text-align: center;
+  width: 550px;
+  height: 40px;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 2vh;
+  margin: 4% auto;
+  display: none;
+  outline: none;
 }
 
 .antwoorden-lijst {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    flex-direction: column;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-direction: column;
+  width: 50%;
 }
 
 html {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 #background {
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: var(--background);
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: var(--background);
+  display: flex;
+  flex-direction: column;
 }
 
 #overlayAntwoord {
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    position: fixed;
-    top: 0;
-    animation: laadani 0.5s ease-in-out forwards;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  top: 0;
+  animation: laadani 0.5s ease-in-out forwards;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
 }
 
 #antwoordOverlayMidden {
-    background-color: var(--resultColor);
+  background-color: var(--resultColor);
 
-    border-radius: 2.3vh;
-    top: 10vh;
-    bottom: 10vh;
-    left: 10vh;
-    right: 10vh;
-    position: fixed;
-    margin: 0 auto;
-    color: rgb(255, 255, 255);
+  border-radius: 2.3vh;
+  top: 10vh;
+  bottom: 10vh;
+  left: 10vh;
+  right: 10vh;
+  position: fixed;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
 }
 
 #antwoordOverlayTekst {
-    font-size: 6.2vh;
-    transform: translateY(45%);
-    margin: 0 auto;
-    font-style: bold;
-    font-family: CopperplateBold;
-    text-align: center;
+  font-size: 6.2vh;
+  transform: translateY(45%);
+  margin: 0 auto;
+  font-style: bold;
+  font-family: CopperplateBold;
+  text-align: center;
 }
 
 #beschrijvingAntwoord {
-    font-size: 3.2vh;
-    transform: translateY(45%);
-    margin: 0 auto;
-    margin-top: 15vh;
-    font-family: CopperplateBold;
-    text-align: center;
+  font-size: 3.2vh;
+  transform: translateY(45%);
+  margin: 0 auto;
+  margin-top: 15vh;
+  font-family: CopperplateBold;
+  text-align: center;
 }
 
 #buttonVolgende {
-    margin-top: 40vh;
-    height: 10vh;
+  
+  height: 10vh;
+  position: fixed;
+  left: 20%;
+  right: 20%;
+  bottom: 11vh;
 }

@@ -22,8 +22,9 @@
 #maintext {
     font-family: Phosphate;
     font-size: 60px;
+    
     text-shadow: 0 0 10px black;
-    margin-top: -1vh;
+    margin-top: 5vh;
     text-align: center;
 }
 

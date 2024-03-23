@@ -33,6 +33,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.4s;
+    position: fixed;
+    z-index: 5;
+    left: 10px;
+    top: 10px;
    
   }
   

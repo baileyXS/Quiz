@@ -72,7 +72,7 @@ function nextQuestion() {
 
     $('#maintext').text(`VRAAG ${questionIndex + 1}`);
     $('#vraagtext').text(question.vraag);
-    $('#img-vraag').attr('src', question.plaatje);
+    $('#img-vraag').attr('src', quizPath + question.plaatje);
 
     const isOpen = !question.fouteAntwoorden || question.fouteAntwoorden.length == 0;
     $('#antwoordlijsten-container').css('display', isOpen ? 'none' : 'flex');

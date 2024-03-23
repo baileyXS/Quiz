@@ -64,7 +64,14 @@ function nextQuestion() {
     questionIndex++;
 
     if (questionIndex >= quiz.vragen.length) {
-        window.location.href = "../resultaat";
+        const query = new URLSearchParams();
+        results.forEach(x => {
+            query.append('question', x.question);
+            query.append('answer', x.answer);
+            query.append('result', x.result);
+        });
+
+        window.location.href = "../resultaat/?" + query;
         return;
     }
 

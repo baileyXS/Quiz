@@ -24,7 +24,8 @@ body {
 
 .container {
     flex: 1;
-    transition: transform .4s;
+    transition: all .4s;
+
     box-sizing: border-box;
     z-index: 0;
     background-size: cover;
@@ -46,6 +47,9 @@ body {
 .container:hover {
     transform: scale(1.03);
     z-index: 1;
+    filter: brightness(1.2);
+    filter: saturate(1.4);
+
 }
 
 .maintext {

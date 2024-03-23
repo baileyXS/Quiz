@@ -18,27 +18,12 @@
   animation: laadani 1s ease-in-out forwards;
 }
 
-.home {
-  position: fixed;
-  /* or absolute/fixed depending on your layout */
-  width: 70px;
-  height: 70px;
-  border-radius: 5px;
-  background-image: url(../assets/img/home.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 0.4s;
-}
-
-.home:hover {
-  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
-}
 
 #maintext {
   font-family: Phosphate;
   font-size: 60px;
   text-shadow: 0 0 10px black;
-  margin-top: 5vh;
+  margin-top: -1vh;
   text-align: center;
 }
 
@@ -184,3 +169,4 @@ body {
   margin-top: 40vh;
   height: 10vh;
 }
+

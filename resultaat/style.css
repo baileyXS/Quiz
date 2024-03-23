@@ -1,7 +1,7 @@
 .maintext {
   animation: laadani 0.5s ease-in-out forwards;
   margin: 0px;
-  margin-top: 10px;
+  margin-top: 4px;
   font-size: 140px;
   text-shadow: 0 0 15px black;
   letter-spacing: 5px;
@@ -20,6 +20,7 @@
 }
 
 table.customTable {
+  animation: laadani 0.5s ease-in-out forwards;
   overflow: hidden;
   width: 100%;
   border-radius: 20px;
@@ -77,4 +78,8 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 6vh;
+}
+
+.home {
+  margin-left: -99.55vh;
 }

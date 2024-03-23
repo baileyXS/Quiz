@@ -25,3 +25,18 @@ body {
     user-select: none;
     height: 100vh;
 }
+.home {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background-image: url(../assets/img/home.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.4s;
+   
+  }
+  
+  .home:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+  }
+  

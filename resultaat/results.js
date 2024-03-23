@@ -4,6 +4,11 @@ function returnToMenu() {
 
 const params = new URLSearchParams(window.location.search);
 
+const quizType = params.get('quiz');
+if (!quizType) {
+    returnToMenu();
+}
+
 const questions = params.getAll('question');
 const answers = params.getAll('answer');
 const results = params.getAll('result');
@@ -13,6 +18,12 @@ if (questions.length == 0 || questions.length != answers.length || answers.lengt
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById('maintext').innerText = `Resultaat ${quizType.toUpperCase()} quiz`;
+
+    const goodCount = results.filter(x => x == "true").length;
+
+    document.getElementById('countText').innerHTML = `Je hebt <b>${goodCount}</b> van de <b>${results.length}</b> vragen goed.`;
+
     const tableBody = document.getElementById('tableBody');
 
     for (let i = 0; i < questions.length; i++) {

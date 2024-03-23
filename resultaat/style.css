@@ -1,11 +1,17 @@
-.maintext {
+#maintext {
   animation: laadani 0.5s ease-in-out forwards;
   margin: 0px;
   margin-top: 4px;
-  font-size: 140px;
+  font-size: 120px;
   text-shadow: 0 0 15px black;
   letter-spacing: 5px;
   font-family: Main;
+}
+
+#countText {
+  animation: laadani 0.5s ease-in-out forwards;
+  text-shadow: 0 0 8px black;
+  font-size: 40px;
 }
 
 @keyframes laadani {

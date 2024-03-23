@@ -1,23 +1,125 @@
 {
     "achtergrondPlaatje": "climateBackground.jpg",
-    "kleur1": "blue",
     "vragen": [
         {
-            "vraag": "How many pickles?",
-            "plaatje": "",
-            "goedAntwoord": "2",
-            "fouteAntwoorden": ["6", "9", "7", "912", "3"]
+            "vraag": "Wat is de primaire oorzaak van de huidige opwarming van de aarde?",
+            "plaatje": "1.jpg",
+            "goedAntwoord": "Menselijke activiteiten",
+            "fouteAntwoorden": [
+                "Vulkanische activiteit",
+                "Zonnevlekken",
+                "Kosmische straling",
+                "Platentektoniek",
+                "Natuurlijke variatie in CO2-niveaus"
+            ]
         },
         {
-            "vraag": "Wie is de goat?",
-            "plaatje": "",
-            "goedAntwoord": "Michal",
-            "fouteAntwoorden": ["Mika", "Mo", "Erim"]
+            "vraag": "Welk broeikasgas heeft de grootste impact op de opwarming van de aarde?",
+            "plaatje": "2.jpg",
+            "goedAntwoord": "Koolstofdioxide (CO2)",
+            "fouteAntwoorden": [
+                "Methaan (CH4)",
+                "Lachgas (N2O)",
+                "Ozon (O3)",
+                "Waterdamp (H2O)",
+                "Zwaveldioxide (SO2)"
+            ]
         },
         {
-            "vraag": "Welke land moet weg?",
-            "plaatje": "",
-            "goedAntwoord": "Frankrijk"
+            "vraag": "Wat is het gemiddelde temperatuurverschil tussen de pre-industriële periode (1850-1900) en nu?",
+            "plaatje": "3.jpg",
+            "goedAntwoord": "1.2°C",
+            "fouteAntwoorden": [
+                "0.2°C",
+                "0.5°C",
+                "1.0°C",
+                "1.5°C",
+                "2.0°C"
+            ]
+        },
+        {
+            "vraag": "Wat is het meest waarschijnlijke effect van de zeespiegelstijging op kustgebieden?",
+            "plaatje": "4.jpg",
+            "goedAntwoord": "Overstromingen en erosie",
+            "fouteAntwoorden": [
+                "Toename van landbouwgrond",
+                "Verbeterde visvangst",
+                "Verhoogde toeristische inkomsten",
+                "Versteviging van de kustlijn",
+                "Vermindering van zoutgehalte in zoetwaterbronnen"
+            ]
+        },
+        {
+            "vraag": "Welke sector is de grootste uitstoter van broeikasgassen wereldwijd?",
+            "plaatje": "5.jpg",
+            "goedAntwoord": "Energievoorziening",
+            "fouteAntwoorden": [
+                "Landbouw",
+                "Industrie",
+                "Transport",
+                "Gebouwen",
+                "Elektriciteitsopwekking"
+            ]
+        },
+        {
+            "vraag": "Wat is het meest effectieve middel om de uitstoot van broeikasgassen te verminderen?",
+            "plaatje": "6.jpg",
+            "goedAntwoord": "Overstappen op hernieuwbare energiebronnen",
+            "fouteAntwoorden": [
+                "Kernenergie",
+                "Biobrandstoffen",
+                "Koolstofafvang en -opslag (CCS)",
+                "Verhoging van energie-efficiëntie",
+                "Verminderde consumptie"
+            ]
+        },
+        {
+            "vraag": "Welke regio is het meest kwetsbaar voor de gevolgen van klimaatverandering?",
+            "plaatje": "7.jpg",
+            "goedAntwoord": "Laaggelegen ontwikkelingslanden",
+            "fouteAntwoorden": [
+                "Europa",
+                "Noord-Amerika",
+                "Australië",
+                "Arctische gebieden",
+                "Kleine eilandstaten"
+            ]
+        },
+        {
+            "vraag": "Wat is het 'Parijsakkoord'?",
+            "plaatje": "8.jpg",
+            "goedAntwoord": "Een internationaal akkoord om de uitstoot van broeikasgassen te verminderen",
+            "fouteAntwoorden": [
+                "Een internationaal verdrag om de biodiversiteit te beschermen",
+                "Een handelsverdrag tussen de EU en China",
+                "Een verdrag om de ozonlaag te herstellen",
+                "Een akkoord over de verdeling van waterbronnen",
+                "Een verdrag om de illegale houtkap te bestrijden"
+            ]
+        },
+        {
+            "vraag": "Wat kan je als individu doen om je impact op het klimaat te verkleinen?",
+            "plaatje": "9.jpg",
+            "goedAntwoord": "Minder energie gebruiken",
+            "fouteAntwoorden": [
+                "Minder vlees eten",
+                "Vaker vliegen",
+                "Meer plastic kopen",
+                "Langere douches nemen",
+                "De auto vaker gebruiken"
+            ]
+        },
+        {
+            "vraag": "Wat is de 'klimaatneutraliteitsdoelstelling' van de Europese Unie?",
+            "plaatje": "10.jpg",
+            "goedAntwoord": "2050",
+            "fouteAntwoorden": [
+                "2030",
+                "2040",
+                "2060",
+                "2070",
+                "2080"
+            ]
         }
     ]
 }

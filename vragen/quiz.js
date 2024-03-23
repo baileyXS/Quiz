@@ -41,7 +41,7 @@ function checkResult(antwoord) {
     showingAnswer = true;
 
     const question = quiz.vragen[questionIndex];
-    
+
     let good = antwoord?.toLowerCase() === question.goedAntwoord.toLowerCase();
 
     results.push({
@@ -79,7 +79,7 @@ function nextQuestion() {
     $('#inputField').css('display', isOpen ? 'flex' : 'none');
 
     existingButtons.forEach(element => {
-        element.remove();   
+        element.remove();
     });
     existingButtons.length = 0;
 
@@ -116,7 +116,7 @@ function nextQuestion() {
 }
 
 function goToResults() {
-    
+
 }
 
 function goToNext() {

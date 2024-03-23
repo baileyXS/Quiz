@@ -33,18 +33,14 @@ function onInputKeyPress(inputField, event) {
 }
 
 function checkResult(antwoord) {
-    existingButtons.forEach(element => {
-        element.remove();   
-    });
-    existingButtons.length = 0;
-
-    $('#inputField').val('');
+    $('#overlayAntwoord').css('display', 'flex');
 
     const question = quiz.vragen[questionIndex];
     
-    if (antwoord === question.antwoord) {
-        
-    }
+    let good = antwoord?.toLowerCase() === question.goedAntwoord?.toLowerCase();
+
+    document.documentElement.style.setProperty('--resultColor', good ? 'green' : 'red');
+    $('#antwoordOverlayTekst').text(`Je antwoord is ${good ? 'correct' : 'fout'}`);
 }
 
 function nextQuestion() {
@@ -58,6 +54,13 @@ function nextQuestion() {
     const isOpen = !question.fouteAntwoorden || question.fouteAntwoorden.length == 0;
     $('#antwoordlijsten-container').css('display', isOpen ? 'none' : 'flex');
     $('#inputField').css('display', isOpen ? 'flex' : 'none');
+
+    existingButtons.forEach(element => {
+        element.remove();   
+    });
+    existingButtons.length = 0;
+
+    $('#inputField').val('');
 
     if (isOpen) {
         const inputField = $('#inputField');

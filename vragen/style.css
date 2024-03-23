@@ -154,7 +154,7 @@ body {
 }
 
 #antwoordOverlayMidden {
-    background-color: rgb(119, 62, 62);
+    background-color: var(--resultColor);
 
     border-radius: 2.3vh;
     top: 10vh;
@@ -167,7 +167,7 @@ body {
 
 }
 
-#antwoordOverlaytekst {
+#antwoordOverlayTekst {
     font-size: 62px;
     transform: translateY(45%);
     margin: 0 auto;

@@ -2,62 +2,194 @@
   "achtergrondPlaatje": "jungleBackground.jpg",
 
   "vragen": [
-    {
-      "vraag": "Welke dieren zou je kunnen verwachten tegen te komen in een jungle?",
-      "plaatje": "vraag-1.jpg",
-
-      "goedAntwoord": "Jaguars",
-      "fouteAntwoorden": [
-        "Papegaaien",
-        "Eekhoorns",
-        "Krokodillen",
-        "Zebra's",
-        "Neushoorns"
-      ]
-    },
+   
     {
       "vraag": "Welke unieke aanpassingen hebben roofdieren in de jungle ontwikkeld om succesvol te jagen en prooien te vangen in het dichte gebladerte?",
-      "plaatje": "vraag-2.webp",
+      "plaatje": "camo.webp",
 
       "goedAntwoord": "Camouflage"
-    },
+    }, 
+
 
     {
       "vraag": "Hoe dragen symbiotische relaties tussen verschillende soorten in de jungle bij aan de overleving van zowel planten als dieren in dit complexe ecosysteem?",
-      "plaatje": "vraag-2.webp",
-
-      "goedAntwoord": "Mimicry"
-    },
-    {
-      "vraag": "Hoe heeft de aanwezigheid van mensen een wisselwerking gehad met en invloed gehad op de biodiversiteit en het ecosysteem van de jungle, zowel positief als negatief?",
-      "plaatje": "vraag-2.webp",
-
-      "goedAntwoord": "Ontbossing"
-    },
-    {
-      "vraag": "Hoe dragen symbiotische relaties tussen verschillende soorten in de jungle bij aan de overleving van zowel planten als dieren in dit complexe ecosysteem?",
-      "plaatje": "vraag-2.webp",
+      "plaatje": "symbo.jpg",
 
       "goedAntwoord": "Mutualisme"
     },
+
+
+    {
+      "vraag": "Hoe heeft de aanwezigheid van mensen een wisselwerking gehad met en invloed gehad op de biodiversiteit en het ecosysteem van de jungle, zowel positief als negatief?",
+      "plaatje": "ontbo.jpg",
+
+      "goedAntwoord": "Ontbossing"
+    },
+
+
+    {
+      "vraag": "Welke evolutionaire voordelen biedt de diversiteit aan kleuren en patronen bij insecten in de jungle, en hoe spelen deze een rol in hun overleving?",
+      "plaatje": "evolutie.jpg",
+
+      "goedAntwoord": " Mimicry"
+    },
+
+
     {
       "vraag": "Hoe hebben de planten en dieren in het Amazoneregenwoud zich aangepast aan de extreme concurrentie om zonlicht en voedingsstoffen?",
-      "plaatje": "vraag-2.webp",
+      "plaatje": "droogte.jpg",
 
       "goedAntwoord": "Specialisatie"
     },
-    {
-      "vraag": "Welke dieren zou je kunnen verwachten tegen te komen in een jungle?",
-      "plaatje": "vraag-1.jpg",
 
-      "goedAntwoord": "Jaguars",
+
+    {
+      "vraag": "Wat is de term voor de symbiotische relatie tussen bepaalde planten en mieren, waarbij de planten voedsel en onderdak bieden in ruil voor bescherming tegen herbivoren?",
+      "plaatje": "plantenEnMieren.png",
+
+      "goedAntwoord": "Myrmecofytisme",
       "fouteAntwoorden": [
-        "Papegaaien",
-        "Eekhoorns",
-        "Krokodillen",
-        "Zebra's",
-        "Neushoorns"
+        "Allelopathie",
+        "Fototropie",
+        "Commensalisme",
+        "Carnivorie",
+        "Mycorrhiza"
       ]
-    }
+    },
+
+
+    {
+      "vraag": "Welke van de volgende dieren is een echte 'kameleon van de jungle', vanwege zijn vermogen om van kleur te veranderen en zich perfect aan te passen aan zijn omgeving?",
+      "plaatje": "kamelonofjungle.jpg",
+
+      "goedAntwoord": "Bladsprinkhaan",
+      "fouteAntwoorden": [
+        "Boomkikker",
+        "Fototropie",
+        "Luipaardgekko",
+        "Java-aap",
+        "Ocelot"
+      ]
+    },
+
+
+    {
+      "vraag": "Welke van de volgende termen verwijst naar de strategie waarbij een dier een onedel imago kopieert om zichzelf te beschermen tegen roofdieren?",
+      "plaatje": "mimicry.JPG",
+
+      "goedAntwoord": "Mimicry",
+      "fouteAntwoorden": [
+        "Parasitisme",
+        "Camouflage",
+        "Mutualisme",
+        "Apocope",
+        "Ambiguïteit"
+      ]
+    },
+
+
+    {
+        "vraag": "Welk van de volgende zoogdieren heeft een vliezige uitbreiding van de huid tussen de voor- en achterpoten, waardoor het kan zweven tussen bomen in de jungle?",
+        "plaatje": "eekhoorn.jpg",
+  
+        "goedAntwoord": "Vliegende eekhoorn",
+        "fouteAntwoorden": [
+          "Eekhoorn",
+          "Wezel",
+          "Maki",
+          "Kinkajoe",
+          "Baviaan"
+        ]
+      },
+
+
+      {
+        "vraag": "Welke jungleplant heeft een symbiotische relatie met mieren, met holle stekels als huisvesting, terwijl de mieren de plant beschermen?",
+        "plaatje": "mier.jpg",
+  
+        "goedAntwoord": "Acacia",
+        "fouteAntwoorden": [
+          "Bananenplant",
+          "Varen",
+          "Lepelplant",
+          "Palmboom",
+          "Lianen"
+          
+        ]
+      },
+
+
+      {
+        "vraag": "Welke van de volgende termen verwijst naar een groep apen die bekend staat om hun grote hersenen, complexe sociale structuren en gebruik van gereedschappen in de jungle?",
+        "plaatje": "apen.jpg",
+  
+        "goedAntwoord": "Chimpansees",
+        "fouteAntwoorden": [
+          "Gibbons",
+          "Makaken",
+          "Bonobo's",
+          "Gorilla's",
+          "Maki's"
+        ]
+      },
+
+
+
+
+      {
+        "vraag": "Welke jungleplant heeft enorme bladeren tot 3 meter breed en wordt door inheemse volkeren gebruikt voor dakbedekking en ambachtelijke producten?",
+        "plaatje": "plant.jpg",
+  
+        "goedAntwoord": "Alocasia macrorrhizos",
+        "fouteAntwoorden": [
+          "Victoria amazonica",
+          "Rafflesia arnoldii",
+          "Amorphophallus titanum",
+          "Nepenthes rajah",
+          "Dracaena fragrans"
+        ]
+      },
+
+      {
+        "vraag": "Welk van de volgende dieren heeft een 'prehensiele staart', waardoor het kan worden gebruikt als een extra ledemaat om zich vast te houden aan takken in de jungle?",
+        "plaatje": "sloth.jpg",
+  
+        "goedAntwoord": "Luiaard",
+        "fouteAntwoorden": [
+          "Lemur",
+          "Jaguar",
+          "Tapir",
+          "Aap",
+          "Pangolin"
+        ]
+      },
+
+      {
+        "vraag": "Welk van de volgende planten staat bekend om zijn grote, vleesetende bladeren die kleine insecten vangen voor voedingsstoffen in de jungle?",
+        "plaatje": "vlees.jpg",
+  
+        "goedAntwoord": "Venusvliegenvanger",
+        "fouteAntwoorden": [
+          "Vleesetende varen",
+          "Zonnedauw",
+          "Vleesetende orchidee",
+          "Nepenthes",
+          "Sarracenia"
+        ]
+      },
+
+      {
+        "vraag": "Welke boom staat bekend als de reus van de jungle vanwege zijn hoogte en omvang?",
+        "plaatje": "kapok.jpg",
+  
+        "goedAntwoord": "De kapokboom",
+        "fouteAntwoorden": [
+          "Palmboom",
+          "Mangroveboom",
+          "Teakboom",
+          "Mahonieboom",
+          "Banyanboom"
+        ]
+      }
   ]
 }

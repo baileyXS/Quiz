@@ -25,26 +25,49 @@ let quiz;
 let domLoaded = false;
 let quizInitialized = false;
 let existingButtons = [];
+let showingAnswer = false;
+let results = [];
 
 function onInputKeyPress(inputField, event) {
     if (event.key !== "Enter") return;
 
+    inputField.blur();
     checkResult(inputField.value);
 }
 
 function checkResult(antwoord) {
-    $('#overlayAntwoord').css('display', 'flex');
+    if (showingAnswer) return;
+
+    showingAnswer = true;
 
     const question = quiz.vragen[questionIndex];
     
-    let good = antwoord?.toLowerCase() === question.goedAntwoord?.toLowerCase();
+    let good = antwoord?.toLowerCase() === question.goedAntwoord.toLowerCase();
 
-    document.documentElement.style.setProperty('--resultColor', good ? 'green' : 'red');
+    results.push({
+        question: question.vraag,
+        answer: antwoord,
+        result: good
+    });
+
+    document.documentElement.style.setProperty('--resultColor', good ? '#22552299' : '#55222299');
     $('#antwoordOverlayTekst').text(`Je antwoord is ${good ? 'correct' : 'fout'}`);
+    $('#beschrijvingAntwoord').text(`Het goede antwoord is: '${question.goedAntwoord}'`);
+    if (questionIndex >= quiz.vragen.length - 1) {
+        $('#buttonVolgende').children('.buttonText')[0].innerText = "Bekijk de resultaten";
+    }
+
+    $('#overlayAntwoord').css('display', 'flex');
 }
 
 function nextQuestion() {
     questionIndex++;
+
+    if (questionIndex >= quiz.vragen.length) {
+        window.location.href = "../resultaat";
+        return;
+    }
+
     const question = quiz.vragen[questionIndex];
 
     $('#maintext').text(`VRAAG ${questionIndex + 1}`);
@@ -92,6 +115,19 @@ function nextQuestion() {
     }
 }
 
+function goToResults() {
+    
+}
+
+function goToNext() {
+    if (!showingAnswer) return;
+
+    showingAnswer = false;
+
+    $('#overlayAntwoord').css('display', 'none');
+    nextQuestion();
+}
+
 function initQuiz() {
     if (quizInitialized || !domLoaded || !quiz) return;
     quizInitialized = true;
@@ -99,7 +135,6 @@ function initQuiz() {
     shuffleArray(quiz.vragen);
 
     document.documentElement.style.setProperty('--background', `url('${quizPath + quiz.achtergrondPlaatje}')`);
-    document.documentElement.style.setProperty('--kleur1', quiz.kleur1);
 
     nextQuestion();
 }

@@ -10,45 +10,39 @@
     <link rel="stylesheet" href="../css/global.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="quiz.js"> </script>
+    <script src="quiz.js"></script>
 </head>
 
 <body>
     <div id="background">
-
-      <a href="../index.html"> <div class="home"></div> </a> 
+        <a href="../index.html">
+            <div class="home"></div>
+        </a>
         <div id="buttonPrefab" class="buttonanswer">
-            <div class="buttonText">test</div>
+            <div class="buttonText"></div>
         </div>
         <div id="maintext">VRAAG</div>
-    
+
         <img id="img-vraag" src="../assets/img/placeholder.png">
-    
-        <div id="vraagtext">Hoe oud kan een ... worden?</div>
-    
+
+        <div id="vraagtext"></div>
+
         <div id="antwoordlijsten-container">
-            
             <div id="antwoorden-links" class="antwoorden-lijst"></div>
-            
             <div id="antwoorden-rechts" class="antwoorden-lijst"></div>
         </div>
-        <input type="text" id="inputField" onkeypress="onInputKeyPress(this, event)" name="antwoord" placeholder="Antwoord">
+        <input type="text" id="inputField" onkeypress="onInputKeyPress(this, event)" name="antwoord"
+            placeholder="Antwoord">
     </div>
 
-
-
     <div id="overlayAntwoord">
-
         <div id="antwoordOverlayMidden">
-
-
             <div id="antwoordOverlayTekst">Goed of fout</div>
             <div id="beschrijvingAntwoord">beschrijvingAntwoord</div>
-      
-
-                <div class="buttonanswer" id="buttonVolgende">
-                    <div class="buttonText">Volgende vraag</div>
-                </div>
+            <div class="buttonanswer" id="buttonVolgende" onclick="goToNext()">
+                <div class="buttonText">Volgende vraag</div>
+            </div>
+        </div>
     </div>
 </body>
 

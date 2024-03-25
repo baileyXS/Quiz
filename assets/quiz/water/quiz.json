@@ -11,26 +11,26 @@
         {
             "vraag": "Hoeveel procent van het aardoppervlak wordt bedekt door oceanen?",
             "plaatje": "vraag2.jpg",
-            "goedAntwoord": "71% ",
+            "goedAntwoord": "71%",
             "fouteAntwoorden": ["68%", "76%", "82%"]
         },        
         {
             "vraag": "Wat is de meest voorkomende levensvorm in de diepzee?",
             "plaatje": "vraag3.jpg",
-            "goedAntwoord": "bacteriën  ",
+            "goedAntwoord": "bacteriën",
             "fouteAntwoorden": ["neteldieren", "diepzee vissen", "kreeftachtigen", "stekelhuidigen", "zee zooggdieren"]
         },
         {
             "vraag": "Wat is de belangrijkste bron van voedsel voor veel zeedieren?",
             "plaatje": "vraag4.jpg",
-            "goedAntwoord": "plankton ",
+            "goedAntwoord": "plankton",
             "fouteAntwoorden": ["andere vissen", "schelpen", "wormen"]
         },
         {
             "vraag": "Hoeveel procent van alle levende dingen bevinden zich onder water?",
             "plaatje": "vraag5.jpg",
             "goedAntwoord": "80% ",
-            "fouteAntwoorden": ["45%", "65%", "90%", "50", "75%"]
+            "fouteAntwoorden": ["45%", "65%", "90%", "50%", "75%"]
         },
         {
             "vraag": "Wat is het grootste levende dier in de oceaan?",
@@ -53,7 +53,7 @@
         {
             "vraag": "Hoe snel kan de orka zwemmen? (km/h)",
             "plaatje": "vraag9.jpg",
-            "goedAntwoord": "56 ",
+            "goedAntwoord": "56",
             "fouteAntwoorden": ["114", "68", "32", "47", "74"]
         },
         {

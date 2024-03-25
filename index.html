@@ -9,33 +9,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="menu.js"></script>
 </head>
 
 <body>
     <div id="overlayInfo">
-<div id="overlayQuizNaam">PLACEHOLDER</div>
-        
-<div id="overlayQuizdesc">blabla</div>
+        <div id="overlayQuizNaam">NAAM</div>
 
-<a id="verderNaarQuiz">Verder naar</a>
-<div id="TerugLanding">Naar landingspagina</div>
+        <div id="overlayQuizdesc"></div>
+
+        <div class="btnContainer">
+            <div onclick="hideOverlay()" id="terugBtn" class="btn">Terug</div>
+            <a id="verderBtn" class="btn">Start de Quiz</a>
+        </div>
     </div>
     <div class="maintext">Quizzie</div>
-    
+
     <div class="container-parent">
 
 
-        <a href="vragen/?quiz=klimaat" class="container" style="background-image: url(assets/img/klimaat.jpg);">
+        <div onclick="selectQuiz('klimaat')" class="container" style="background-image: url(assets/img/klimaat.jpg);">
             <div>KLIMAAT</div>
-        </a>
+        </div>
 
-        <a href="vragen/?quiz=jungle" class="container" style="background-image: url(assets/img/jungle.jpg);">
+        <div onclick="selectQuiz('jungle')" class="container" style="background-image: url(assets/img/jungle.jpg);">
             <div>JUNGLE</div>
-        </a>
+        </div>
 
-        <a href="vragen/?quiz=water" class="container" style="background-image: url(assets/img/water.jpg);">
+        <div onclick="selectQuiz('water')" class="container" style="background-image: url(assets/img/water.jpg);">
             <div>WATER</div>
-        </a>
+        </div>
     </div>
 </body>
 

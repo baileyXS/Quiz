@@ -22,6 +22,10 @@ body {
     
 }
 
+.horz {
+    display: flex;
+}
+
 .container {
     flex: 1;
     transition: all .4s;
@@ -34,6 +38,7 @@ body {
     display: flex;
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 #overlayInfo {
     z-index: 5;
@@ -45,7 +50,9 @@ body {
     position: fixed;
     margin: 0 auto;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.84);
+    background-color: rgba(37, 37, 37, 0.974);
+    box-shadow: 0 0 2vh black;
+    display: none;
 }
 .container div {
     animation: laadani 1s ease-in-out forwards;
@@ -95,45 +102,41 @@ body {
     animation: laadani 1s ease-in-out forwards;
     margin: 0px;
     z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 15vh;
+    right: 15vh;
     position: fixed;
     top: 300px;
     font-size: 40px;
     text-shadow: 0 0 15px black;
     letter-spacing: 5px;
     font-family: CopperplateBold;
+    text-align: center;
 }
 
-#verderNaarQuiz {
+.btnContainer {
     margin: 1.5vh;
-    font-family: CopperplateBold;
-    border-radius: 3vh;
-    cursor: pointer;
-    font-size: 30px;
-    text-align: center;
     z-index: 2;
-    color: black;
-    flex: 1 1 auto;
     display: flex;
-    margin-left: 50vh;
-    margin-top: 70vh;
-    color: white;
+    position: fixed;
+    bottom: 10vh;
+    left: 50%;
+    transform: translate(-50%);
 }
 
-#TerugLanding {
-    margin: 1.5vh;
-    
+#verderBtn {
+    background-color: rgb(71, 107, 70);
+}
+
+.btn {
+    color: white;
+    cursor: pointer;
     font-family: CopperplateBold;
     border-radius: 3vh;
-    cursor: pointer;
     font-size: 30px;
     text-align: center;
-    z-index: 2;
-    margin-top: 4.5vh;
-    color: black;
-    flex: 1 1 auto;
-    display: flex;
-    
-    color: white;
+    text-decoration: none;
+    background-color: rgb(84, 84, 84);
+
+    padding: 2vh;
+    margin: 2vh;
 }

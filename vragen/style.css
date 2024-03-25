@@ -23,7 +23,7 @@
   font-size: 60px;
 
   text-shadow: 0 0 10px black;
-  margin-top: 5vh;
+  margin-top: 7.5vh;
   text-align: center;
 }
 
@@ -42,11 +42,13 @@
 
 #vraagtext {
   font-family: vraagmain;
-  font-size: 50px;
+  font-size: 40px;
   text-shadow: 0 0 10px black;
   text-align: center;
-  margin-top: 37vh;
+  margin-top: 42vh;
   margin-bottom: 2vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
 }
 
 #buttonPrefab {

@@ -120,6 +120,38 @@
                 "2070",
                 "2080"
             ]
-        }
+        },
+         
+    {
+        "vraag": "Hoe heet de term voor de toename van de gemiddelde temperatuur van de aarde?",
+        "plaatje": "opwarm.webp",
+  
+        "goedAntwoord": "Opwarming"
+      }, 
+      {
+        "vraag": "Hoe heet het proces waarbij bepaalde gassen de warmte van de zon vasthouden en de atmosfeer verwarmen?",
+        "plaatje": "broei.png",
+  
+        "goedAntwoord": "Broeikas"
+      },
+      {
+        "vraag": "Hoe heet de term voor de veranderingen in het klimaat die worden veroorzaakt door menselijke activiteiten?",
+        "plaatje": "Antropogeen.webp",
+  
+        "goedAntwoord": "Antropogeen"
+      },
+      {
+        "vraag": "Hoe heet de laag in de atmosfeer die helpt bij het reguleren van de temperatuur op aarde door zonnestraling vast te houden?",
+        "plaatje": "Ozonlaag.jpeg",
+  
+        "goedAntwoord": "Ozonlaag"
+      },
+      {
+        "vraag": "Hoe heet het fenomeen waarbij grote ijsmassa's smelten en bijdragen aan de stijging van de zeespiegel?",
+        "plaatje": "zeespiegel.jpeg",
+  
+        "goedAntwoord": "Smelten"
+      }
+  
     ]
 }

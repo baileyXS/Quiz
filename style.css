@@ -103,6 +103,7 @@ body {
     margin: 0px;
     z-index: 2;
     left: 15vh;
+    animation: laadani 1s ease-in-out forwards;
     right: 15vh;
     position: fixed;
     top: 300px;
@@ -115,6 +116,7 @@ body {
 
 .btnContainer {
     margin: 1.5vh;
+    animation: laadani 1s ease-in-out forwards;
     z-index: 2;
     display: flex;
     position: fixed;
@@ -125,6 +127,7 @@ body {
 
 #verderBtn {
     background-color: rgb(71, 107, 70);
+    animation: laadani 1s ease-in-out forwards;
 }
 
 .btn {
@@ -136,7 +139,7 @@ body {
     text-align: center;
     text-decoration: none;
     background-color: rgb(84, 84, 84);
-
+    animation: laadani 1s ease-in-out forwards;
     padding: 2vh;
     margin: 2vh;
 }

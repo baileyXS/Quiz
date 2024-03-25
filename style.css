@@ -35,7 +35,18 @@ body {
     text-decoration: none;
     color: white;
 }
-
+#overlayInfo {
+    z-index: 5;
+    border-radius: 2.3vh;
+    top: 10vh;
+    bottom: 10vh;
+    left: 10vh;
+    right: 10vh;
+    position: fixed;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.84);
+}
 .container div {
     animation: laadani 1s ease-in-out forwards;
     margin: 650px auto 0 auto;
@@ -64,4 +75,65 @@ body {
     text-shadow: 0 0 15px black;
     letter-spacing: 30px;
     font-family: Main;
+}
+
+#overlayQuizNaam {
+    animation: laadani 1s ease-in-out forwards;
+    margin: 0px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    top: 250px;
+    font-size: 130px;
+    text-shadow: 0 0 15px black;
+    letter-spacing: 5px;
+    font-family: Phosphate;
+}
+
+#overlayQuizdesc {
+    animation: laadani 1s ease-in-out forwards;
+    margin: 0px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    top: 300px;
+    font-size: 40px;
+    text-shadow: 0 0 15px black;
+    letter-spacing: 5px;
+    font-family: CopperplateBold;
+}
+
+#verderNaarQuiz {
+    margin: 1.5vh;
+    font-family: CopperplateBold;
+    border-radius: 3vh;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    z-index: 2;
+    color: black;
+    flex: 1 1 auto;
+    display: flex;
+    margin-left: 50vh;
+    margin-top: 70vh;
+    color: white;
+}
+
+#TerugLanding {
+    margin: 1.5vh;
+    
+    font-family: CopperplateBold;
+    border-radius: 3vh;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    z-index: 2;
+    margin-top: 4.5vh;
+    color: black;
+    flex: 1 1 auto;
+    display: flex;
+    
+    color: white;
 }

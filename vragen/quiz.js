@@ -50,7 +50,7 @@ function checkResult(antwoord) {
         result: good
     });
 
-    document.documentElement.style.setProperty('--resultColor', good ? '#22552299' : '#55222299');
+    document.documentElement.style.setProperty('--resultColor', good ? '#225522CC' : '#552222CC');
     $('#antwoordOverlayTekst').text(`Je antwoord is ${good ? 'correct' : 'fout'}`);
     $('#beschrijvingAntwoord').text(`Het goede antwoord is: '${question.goedAntwoord}'`);
     if (questionIndex >= quiz.vragen.length - 1) {

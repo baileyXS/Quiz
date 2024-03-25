@@ -28,13 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (let i = 0; i < questions.length; i++) {
         let tr = document.createElement('tr');
+
         let q = document.createElement('td');
         let a = document.createElement('td');
         let r = document.createElement('td');
 
         q.innerText = questions[i];
         a.innerText = answers[i];
-        r.innerText = results[i] == "true" ? 'Goed' : 'Fout';
+
+        let good = results[i] == "true";
+        tr.className = good ? 'green' : 'red';
+
+        r.innerText = good ? 'Goed' : 'Fout';
 
         tr.appendChild(q);
         tr.appendChild(a);

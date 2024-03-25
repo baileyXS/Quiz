@@ -1,88 +1,93 @@
 #maintext {
-  animation: laadani 0.5s ease-in-out forwards;
-  margin: 0px;
-  margin-top: 4px;
-  font-size: 120px;
-  text-shadow: 0 0 15px black;
-  letter-spacing: 5px;
-  font-family: Main;
+    animation: laadani 0.5s ease-in-out forwards;
+    margin: 0px;
+    margin-top: 4px;
+    font-size: 120px;
+    text-shadow: 0 0 15px black;
+    letter-spacing: 5px;
+    font-family: Main;
 }
 
 #countText {
-  animation: laadani 0.5s ease-in-out forwards;
-  text-shadow: 0 0 8px black;
-  font-size: 40px;
+    animation: laadani 0.5s ease-in-out forwards;
+    text-shadow: 0 0 8px black;
+    font-size: 40px;
 }
 
 @keyframes laadani {
-  0% {
-      opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
 
-  100% {
+    100% {
 
-      opacity: 1;
-  }
+        opacity: 1;
+    }
 }
 
 table.customTable {
-  animation: laadani 0.5s ease-in-out forwards;
-  overflow: hidden;
-  width: 100%;
-  border-radius: 20px;
-  background-color: #ffffff;
-  border-collapse: collapse;
-  border-width: 2px;
-  border-color: #ffffff;
-  border-style: solid;
-  
-  color: #ffffff;
+    animation: laadani 0.5s ease-in-out forwards;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 20px;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-style: solid;
+
+    color: #ffffff;
+}
+
+.green {
+    background-color: rgba(79, 157, 40, 0.483);
+}
+
+.red {
+    background-color: rgba(157, 40, 40, 0.483);
 }
 
 table.customTable {
-  width: 80%;
-  padding-bottom: 20px;
-  margin-top: 30px;
-  background-color: rgba(92, 92, 92, 0.5);
+    width: 80%;
+    padding-bottom: 20px;
+    margin-top: 30px;
 
 }
 
 table.customTable td,
 table.customTable th {
-  border-width: 2px;
-  font-size: 20px;
-  border-color: #ffffff56;
-  border-style: solid;
-  padding: 15px;
-  text-align: center;
-  margin: 0 auto;
- 
+    border-width: 2px;
+    font-size: 20px;
+    border-color: #ffffff56;
+    border-style: solid;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+
 }
 
 table.customTable thead {
-  background-color: rgba(54, 54, 54, 0.5);
-  
+    background-color: rgba(54, 54, 54, 0.5);
+
 }
 
 .background {
-  z-index: -1;
-  background-image: url('../assets/img/resultaatBackground.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-position: center;
+    z-index: -1;
+    background-image: url('../assets/img/resultaatBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
 }
 
 body {
-  height: 100% !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 6vh;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6vh;
 }
-

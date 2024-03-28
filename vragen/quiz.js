@@ -4,6 +4,8 @@ function returnToMenu() {
     window.location.href = "../";
 }
 
+// terug naar menu
+
 const params = new URLSearchParams(window.location.search);
 const quizType = params.get("quiz");
 if (!quizType) {
@@ -18,6 +20,8 @@ function shuffleArray(array) {
         array[j] = temp;
     }
 }
+
+// voor array met antwoorden 
 
 const quizPath = `../assets/quiz/${quizType}/`;
 
@@ -35,6 +39,8 @@ function onInputKeyPress(inputField, event) {
     checkResult(inputField.value);
 }
 
+//enter key voor volgende op open vraag
+
 function checkResult(antwoord) {
     if (showingAnswer) return;
 
@@ -42,7 +48,7 @@ function checkResult(antwoord) {
 
     const question = quiz.vragen[questionIndex];
 
-    let good = antwoord?.toLowerCase() === question.goedAntwoord.toLowerCase();
+    let good = antwoord?.toLowerCase() === question.goedAntwoord.toLowerCase(); //lowercase of uppercase is goed gerekend.
 
     results.push({
         question: question.vraag,
@@ -71,7 +77,7 @@ function goToResults() {
 
     window.location.href = "../resultaat/?" + query;
 }
-
+// resultaat
 function nextQuestion() {
     questionIndex++;
 
@@ -84,7 +90,7 @@ function nextQuestion() {
 
     $('#maintext').text(`VRAAG ${questionIndex + 1}`);
     $('#vraagtext').text(question.vraag);
-    $('#img-vraag').attr('src', quizPath + question.plaatje);
+    $('#img-vraag').attr('src', quizPath + question.plaatje); //voor de plaatje, vraag en maintext
 
     const isOpen = !question.fouteAntwoorden || question.fouteAntwoorden.length == 0;
     $('#antwoordlijsten-container').css('display', isOpen ? 'none' : 'flex');
@@ -108,13 +114,13 @@ function nextQuestion() {
         question.fouteAntwoorden.forEach(x => {
             antwoorden.push(x);
         });
-        antwoorden.push(question.goedAntwoord);
+        antwoorden.push(question.goedAntwoord); //voor goeie antwoorden
 
         shuffleArray(antwoorden);
 
         let right = false;
         antwoorden.forEach(x => {
-            const parent = $(right ? '#antwoorden-rechts' : '#antwoorden-links');
+            const parent = $(right ? '#antwoorden-rechts' : '#antwoorden-links'); //clone the buttons zodat er 6 zijn
             right = !right;
             const button = prefab.clone();
             existingButtons.push(button);
@@ -133,7 +139,7 @@ function goToNext() {
     showingAnswer = false;
 
     $('#overlayAntwoord').css('display', 'none');
-    nextQuestion();
+    nextQuestion(); //laat oude antwoorden verdwijnen voor snellere pagina
 }
 
 function initQuiz() {
@@ -142,7 +148,7 @@ function initQuiz() {
 
     shuffleArray(quiz.vragen);
 
-    document.documentElement.style.setProperty('--background', `url('${quizPath + quiz.achtergrondPlaatje}')`);
+    document.documentElement.style.setProperty('--background', `url('${quizPath + quiz.achtergrondPlaatje}')`);  //achtergrond plaatje zetten voor de gekozen quiz.
 
     nextQuestion();
 }
@@ -158,3 +164,5 @@ $.getJSON(quizPath + "quiz.json", (result) => {
 }).fail(() => {
     returnToMenu();
 });
+
+// als fout/error optreed ga naar landingspagina.

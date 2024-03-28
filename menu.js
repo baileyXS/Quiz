@@ -14,6 +14,8 @@ function hideOverlay() {
     showingOverlay = false;
 }
 
+// voor overlay
+
 function selectQuiz(quizName) {
     if (loadingQuiz || showingOverlay) return;
     loadingQuiz = true;

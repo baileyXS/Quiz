@@ -1,6 +1,7 @@
 function returnToMenu() {
     window.location.href = "../";
-}
+} 
+// terug knop voor main menu
 
 const params = new URLSearchParams(window.location.search);
 
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         a.innerText = answers[i];
 
         let good = results[i] == "true";
-        tr.className = good ? 'green' : 'red';
+        tr.className = good ? 'green' : 'red'; // groen = goed | rood = fout
 
         r.innerText = good ? 'Goed' : 'Fout';
 

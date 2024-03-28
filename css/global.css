@@ -17,6 +17,11 @@
     font-family: CopperplateBold;
     src: url(../assets/fonts/CopperplateBold.ttf);
 }
+
+
+/* Alle custom fonts hierboven */
+
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
